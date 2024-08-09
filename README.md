@@ -6,4 +6,5 @@ Demo中包含中文，英文，日文三类，在资源库中有对应的三类s
 
 支持手写和拼音检索！
 
-
+![](TempScreenshot.png)
+![](TempScreenshot2.png)
