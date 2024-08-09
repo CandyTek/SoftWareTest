@@ -1,13 +1,18 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 19
-    buildToolsVersion "25.0.0"
+    compileSdkVersion 33
+    
 
     defaultConfig {
         applicationId "com.example.softwaretest"
-        minSdkVersion 8
-        targetSdkVersion 20
+        minSdkVersion 21
+        targetSdkVersion 21
+        ndk {
+            //noinspection ChromeOsAbiSupport
+            abiFilters 'armeabi'
+        }
+
     }
 
     buildTypes {
@@ -19,5 +24,5 @@ android {
 }
 
 dependencies {
-    compile 'com.android.support:support-v4:19.1.0'
+    implementation 'com.android.support:support-v4:28.0.0'
 }
